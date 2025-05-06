@@ -127,9 +127,33 @@ const calcularPromedio = (grades) =>{
 }
 console.log(calcularPromedio(grades));*/
 
-/*EJERCICIO 2 DE OBJS
-const prototipos =(objeto) => {
-  while (prototipo=!Object){
+/*EJERCICIO 2 DE OBJS*/
+function Persona(firstName,lastName){
+  this.firstName=firstName;
+  this.lastName=lastName;
+}
+function Estudiante(firstName,lastName){
+  Persona.call(this,firstName,lastName);
+}
+Estudiante.prototype=Object.create(Persona.prototype) //creamos un persona.prototype y se lo asignamos como prototypo de estudiante.prototype
+Estudiante.prototype.constructor= Estudiante; //agregamos de nuevo el constructor porque se puso Persona como constructor de estudiante con lo de arriba
 
+function Alumno3k03(firstName,lastName){
+  Estudiante.call(this,firstName,lastName);
+}
+Alumno3k03.prototype=Object.create(Estudiante.prototype);
+Alumno3k03.prototype.constructor=Alumno3k03;
+
+const Pepi = new Alumno3k03("Stefano","Conti");
+
+const mostrarNombres = (objeto) =>{
+  console.log(`Los datos del alumno son:\nNombre: ${objeto.firstName}\nApellido: ${objeto.lastName}`);
+  let prototipo = Object.getPrototypeOf(objeto);
+  console.log();
+  console.log("Aquí sus prototipos: ");
+  while(prototipo!=null){
+    console.log(`→ ${prototipo.constructor.name}`);
+    prototipo = Object.getPrototypeOf(prototipo);
   }
-}*/
+}
+mostrarNombres(Pepi);
