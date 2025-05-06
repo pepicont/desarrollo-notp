@@ -127,7 +127,7 @@ const calcularPromedio = (grades) =>{
 }
 console.log(calcularPromedio(grades));*/
 
-/*EJERCICIO 2 DE OBJS*/
+/*EJERCICIO 2 DE OBJS
 function Persona(firstName,lastName){
   this.firstName=firstName;
   this.lastName=lastName;
@@ -152,8 +152,8 @@ const mostrarNombres = (objeto) =>{
   console.log();
   console.log("Aquí sus prototipos: ");
   while(prototipo!=null){
-    console.log(`→ ${prototipo.constructor.name}`);
+    console.log(`→ ${prototipo.constructor.name}`); //esto porque sino muestra el objeto y yo quiero que muestre el nombre del constructor
     prototipo = Object.getPrototypeOf(prototipo);
   }
 }
-mostrarNombres(Pepi);
+mostrarNombres(Pepi);*/
