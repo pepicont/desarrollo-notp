@@ -1,0 +1,9 @@
+[2025-05-22T23:03:31.873Z] GET /%C3%B1aosequidizerborboletasporai - 404 - 404 Página no encontrada 
+[2025-05-22T23:04:48.401Z] GET /otro.html - 200 - Entramo a la pagina muchachoooo 
+[2025-05-22T23:05:29.216Z] POST / - 405 - Error, no usaste el GET 
+[2025-05-22T23:15:41.268Z] GET /otro.html - 200 - Entramo a la pagina muchachoooo 
+[2025-05-22T23:16:27.260Z] GET / - 200 - Entramo a la pagina muchachoooo 
+[2025-05-22T23:16:35.560Z] GET / - 200 - Entramo a la pagina muchachoooo 
+[2025-05-22T23:16:45.328Z] GET /home - 200 - Entramo a la pagina muchachoooo 
+[2025-05-22T23:16:58.423Z] GET /home.html - 200 - Entramo a la pagina muchachoooo 
+[2025-05-22T23:17:06.275Z] GET /index - 200 - Entramo a la pagina muchachoooo 
